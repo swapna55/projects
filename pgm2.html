@@ -9,7 +9,7 @@ var x=document.forms["login"]["username"].value
 var y=document.forms["login"]["pwd"].value
 if(x==null||x==""||y==null||y=="")
 {
-alert("both fields cant be empty");
+alert("both fields can not be empty");
 }
 else
 {
@@ -18,22 +18,24 @@ if(x=="akshaya")
 if(y=="777")
 {
 alert("login successfull");
+
 }
 else{
 alert("password do not match");
 }
 }
 else{
-alert("user dosent exit");
+alert("user dose not exit");
 }
 }
 }
 </script>
+</html>
 
 <body>
 <div align="center">
 <h1>login<h1>
-<form name="login" onsubmit="submitfunction()">
+<form name="login" action="reg2.html" method="post" onsubmit="retur;">
 	 
 
 	username:<input type="text" name="username"><br><br>
@@ -43,4 +45,5 @@ alert("user dosent exit");
 <input type="submit"  value="submit">
  </form>
 </body>
+
  
