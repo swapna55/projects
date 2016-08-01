@@ -1,0 +1,112 @@
+<html>
+<script type="text/javascript">
+function submitfunction()
+{
+if(document.form2.name.value=="")
+{
+alert("enter your name ");
+return false;
+}
+if(document.form2.password.value=="")
+{
+alert("enter your password ");
+return false;
+}
+if(document.form2.email_address.value=="")
+{
+alert("enter your email address ");
+return false;
+}
+if(document.form2.alternate_email_address.value=="")
+{
+alert("enter alternate email address ");
+return false;
+}
+if(document.form2.phone_number.value=="")
+{
+alert("enter your phone number ");
+return false;
+}
+if(document.form2.phone_number.value.length<10||document.form2.phone_number.value.length>10)
+{
+alert("phone number should be 10 digits")
+return false;
+}
+else 
+{
+alert("registered successfully");
+return true;
+}
+}
+
+
+</script>
+<head>
+<style>
+input[type='text']{
+text-align:right;
+}
+input[type='text']:focus{
+text-align:right;
+}  
+input[type='password']{
+text-align:center;
+}
+input[type='password']:focus{
+text-align:center;
+}  
+input[type='text']{
+text-align:center;
+}
+input[type='text']:focus{
+text-align:center;
+}  
+input[type='submit']{
+text-align:center;
+}
+input[type='submit']:focus{
+text-align:center;
+}  
+  
+
+</style>
+</head>
+<body background="3d.jpg">
+<center><table cellpadding="2" border bgcolor="#545454" align="center" width="30%"  cell spacing="2"></center>
+<form name="form2" action="loginpage.html"  method="post" onsubmit="return submitfunction()">
+   
+<tr>
+<center><font size="6"><b>Registration Form</b></font></center><br>
+</tr>
+
+<tr>
+<td><center><input type="text"  placeholder="name" name="name"/><br><br></center></td>
+</tr>
+ 
+<tr>
+<td><center><input type="password" placeholder="password" name="password"><br><br></center></td>
+</tr>
+
+<tr>
+<td><center><input type="text" placeholder="email address" name="email_address"><br><br></center></td>
+</tr>
+
+<tr>
+<td><center><input type="text" placeholder="alternate email address" name="alternate_email_address"><br><br></center></td>
+</tr>
+
+<tr>
+<td><center><input type="text" placeholder="phone number" name="phone_number"><br><br></center></td>
+</tr>
+
+<tr>
+<td><center><input type="submit" placeholder="submit" name="submit"><br><br></center></td> 
+</tr>
+
+<caption align="bottom"><p class="message">Already registered?<a href="loginpage.html">Go to loginpage</a></p></caption>
+
+
+</form>
+</body>
+</html>
+
